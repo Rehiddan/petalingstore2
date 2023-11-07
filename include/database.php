@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli($config->petalingstore-do-user-15065973-0.c.db.ondigitalocean.com, $config->doadmin, $config->AVNS_ntwWQ37zLf9PSEATzj_, $config->defaultdb);
+$mysqli = new mysqli($config->database_host, $config->database_user, $config->database_password, $config->database_name);
 
 if ($mysqli->connect_errno) {
     echo "<div class='error'>";
